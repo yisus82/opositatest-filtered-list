@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Plan 1",
+    "categories": ["Category 1", "Category 2"],
+    "scope": "Scope 1",
+    "academicTitle": "Academic Title 1",
+    "salary": 1000
+  },
+  {
+    "name": "Plan 2",
+    "categories": ["Category 2", "Category 3"],
+    "scope": "Scope 1",
+    "academicTitle": "Academic Title 1",
+    "salary": 2000
+  },
+  {
+    "name": "Plan 3",
+    "categories": ["Category 3"],
+    "scope": "Scope 2",
+    "academicTitle": "Academic Title 2",
+    "salary": 1500
+  }
+]
