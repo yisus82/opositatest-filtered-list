@@ -1,0 +1,30 @@
+@import 'colors.scss';
+
+:host {
+  div {
+    background-color: $light;
+    margin: 2rem;
+    padding: 1rem;
+    p {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    ul {
+      li {
+        margin: 0.5rem;
+        label {
+          margin: 0.5rem;
+        }
+      }
+    }
+    .slider {
+      margin: 0;
+      div {
+        margin: 0;
+        label {
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+}

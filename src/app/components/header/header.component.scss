@@ -1,0 +1,8 @@
+@import 'colors.scss';
+
+:host {
+  align-content: center;
+  background-color: $white;
+  display: flex;
+  justify-content: center;
+}

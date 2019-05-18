@@ -1,0 +1,25 @@
+/* General styles */
+:host {
+  display: grid;
+  grid-template-columns: 30vw 70vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'filters filters'
+    'plans plans';
+}
+
+app-filters {
+  grid-area: filters;
+}
+
+app-plan-list {
+  grid-area: plans;
+}
+
+/* Big screens */
+
+@media (min-width: 1000px) {
+  :host {
+    grid-template-areas: 'filters plans';
+  }
+}

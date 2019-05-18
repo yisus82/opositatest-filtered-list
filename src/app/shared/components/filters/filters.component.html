@@ -1,3 +1,51 @@
-<p>
-  filters works!
-</p>
+<div>
+  <p>Categories</p>
+  <ul>
+    <li *ngFor="let category of categories">
+      <input
+        type="checkbox"
+        [name]="category.name"
+        [id]="category.name"
+        [checked]="category.selected"
+        (input)="categoriesSelectedChanged($event)"
+      />
+      <label [for]="category.name">{{ category.name }}</label>
+    </li>
+  </ul>
+  <hr />
+  <p>Scopes</p>
+  <ul>
+    <li *ngFor="let scope of scopes">
+      <input
+        type="checkbox"
+        [name]="scope.name"
+        [id]="scope.name"
+        [checked]="scope.selected"
+        (input)="scopesSelectedChanged($event)"
+      />
+      <label [for]="scope.name">{{ scope.name }}</label>
+    </li>
+  </ul>
+  <hr />
+  <p>Academic Titles</p>
+  <ul>
+    <li *ngFor="let academicTitle of academicTitles">
+      <input
+        type="radio"
+        name="academicTitle"
+        [id]="academicTitle.name"
+        [checked]="academicTitle.selected"
+        (input)="academicTitleSelectedChanged($event)"
+      />
+      <label [for]="academicTitle.name">{{ academicTitle.name }}</label>
+    </li>
+  </ul>
+  <hr />
+  <p>Salary Range</p>
+  <ng5-slider
+    [(value)]="value"
+    [(highValue)]="highValue"
+    [options]="options"
+    (userChangeEnd)="salarySelectedChanged($event)"
+  ></ng5-slider>
+</div>

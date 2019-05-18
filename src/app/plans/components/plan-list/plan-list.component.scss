@@ -1,0 +1,12 @@
+@import 'colors.scss';
+
+:host {
+  ul {
+    margin: 2rem;
+    li {
+      background-color: $white;
+      margin: 0.5rem 0;
+      padding: 1rem;
+    }
+  }
+}

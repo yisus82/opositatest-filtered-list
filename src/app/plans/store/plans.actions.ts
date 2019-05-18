@@ -16,16 +16,20 @@ export class GetPlansFailed {
 
 export class CategoriesSelectedChanged {
   static type = '[Plans] CategoriesSelectedChanged';
+  constructor(public categories: string[]) {}
 }
 
-export class ScopeSelectedChanged {
-  static type = '[Plans] ScopeSelectedChanged';
+export class ScopesSelectedChanged {
+  static type = '[Plans] ScopesSelectedChanged';
+  constructor(public scopes: string[]) {}
 }
 
 export class AcademicTitleSelectedChanged {
   static type = '[Plans] AcademicTitleSelectedChanged';
+  constructor(public academicTitle: string) {}
 }
 
 export class SalarySelectedChanged {
   static type = '[Plans] SalarySelectedChanged';
+  constructor(public value: number, public highValue: number) {}
 }
